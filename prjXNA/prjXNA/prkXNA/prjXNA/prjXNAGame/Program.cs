@@ -9,7 +9,7 @@ namespace prjXNAGame
         /// </summary>
         static void Main(string[] args)
         {
-            using (racer game = new racer())
+            using (Snake game = new Snake())
             {
                 game.Run();
             }

@@ -98,6 +98,7 @@
     <Compile Include="Program.cs" />
     <Compile Include="Game1.cs" />
     <Compile Include="racer.cs" />
+    <Compile Include="Snake.cs" />
     <Compile Include="sound.cs" />
     <Compile Include="sprite.cs" />
     <Compile Include="spriteCircle.cs" />

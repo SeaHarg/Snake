@@ -1,0 +1,761 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head id="ctl00_Head1">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+
+
+<link id="ctl00_HeaderLink1" rel="stylesheet" type="text/css" href="xact_files/Global-bn2036.css"><link id="ctl00_HeaderLink2" rel="stylesheet" type="text/css" href="xact_files/Library-bn2036.css"><meta name="ROBOTS" content="NOINDEX,NOFOLLOW"><meta name="MN" content="74838603-6:06:19 PM"><meta name="ms.locale" content="en-us"><meta name="Search.ShortId" content="bb203879">
+<!-- Looking for metadata? Use the robot view instead http://currentsite/currenturl(robot).aspx -->
+<meta name="DCS.dcsuri" content="/en-us/library(d=default)/bb203879(l=en-us,v=XNAGameStudio.30).aspx">
+<link rel="stylesheet" type="text/css" href="xact_files/mtps-bn2036.css"><link rel="alternate" media="print" href="http://msdn.microsoft.com/en-us/library/bb203879%28printer%29.aspx">
+<title>
+	How To: Add a Sound File to Your Game Using XACT
+</title></head><body id="ctl00_Mtps_body" dir="ltr">
+  <form name="aspnetForm" method="post" action="bb203879.aspx" id="aspnetForm">
+<div>
+<input name="__EVENTTARGET" id="__EVENTTARGET" value="" type="hidden">
+<input name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" type="hidden">
+<input name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUBMGQYAQUeX19Db250cm9sc1JlcXVpcmVQb3N0QmFja0tleV9fFgEFImN0bDAwJE1hc3RoZWFkMSRjdGwwMCRTZWFyY2hCdXR0b275xmcowsp6eperqf2RJKnFAf2Lhw==" type="hidden">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['aspnetForm'];
+if (!theForm) {
+    theForm = document.aspnetForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="xact_files/WebResource.js" type="text/javascript"></script>
+
+
+<script type="text/javascript">
+//<![CDATA[
+var CCI_DeleteConfirmationText="Are you sure you want to delete?";function wkAddNewItemClick(){CCE_EditAnnotation(-1);};
+var CCS_AddLinkID="ctl00_rs1_WikiContent_Add";var CCS_User="";var CCS_ContentUrl="http://msdn.microsoft.com/en-us/library/bb203879.aspx";//]]>
+</script>
+
+<script src="xact_files/Silverlight-bn2036.js" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+var wt_nvr_ru = "WT_NVR_RU";var wt_fpcdom = ".microsoft.com";var wt_domlist = "msdn.microsoft.com";var wt_pathlist = "";var wt_paramlist = "DCSext.mtps_devcenter";var wt_siteid = "MSDN";var gDomain="m.webtrends.com";
+var gDcsId="dcsmgru7m99k7mqmgrhudo0k8_8c6m";
+var gFpc="WT_FPC";
+/*<![CDATA[*/
+if(document.cookie.indexOf(gFpc+"=")==-1){document.write("<scr"+"ipt type='text/javascript' src='"+"http"+(window.location.protocol.indexOf('https:')==0?'s':'')+"://"+gDomain+"/"+gDcsId+"/wtid.js"+"'><\/scr"+"ipt>");}
+/*]]>*/
+var detectedLocale = 'en-us';
+var wtsp="msdnlib_devtools_lang";
+var gTrackEvents = 0;
+function ra_OnResizeableAreaToggle(isCollapsing) {}var ra_WidthCookieName = "tocwidth"; var ra_CollapsedCookieName = "toccollapsed";var CCT_Browse="Browse other topics containing this tag";var CCT_Remove="Remove the tag from this topic";var CCT_NoTags="No tags entered";var CCT_Error="An error has occurred";var CCT_BugTag="contentbug";var CCE_ErrSameContent = "Content has not changed";
+var CCE_ErrEmptyTitle = "Title can not be empty";
+var CCE_ErrEmptyContent = "Content cannot be empty";
+var CCE_ErrTitleTooLong = "Title is limited to 100 characters";
+var CCE_ErrContentTooLong = "Content is limited to 50,000 characters";
+var CCE_ErrServerError = "Error occured while saving your data.";
+var CCE_IsEditing=false;var CCE_IsTaggingEnabled=true;var CCE_TitleMaxLen=100;var CCE_ContentMaxLen=50000;var CCE_UpdateText="Please Wait";//]]>
+</script>
+
+<script src="xact_files/compositejscript1.js" type="text/javascript"></script>
+<script src="xact_files/Microsoft.js" type="text/javascript"></script>
+<script src="xact_files/Microsoft_002.js" type="text/javascript"></script>
+<div>
+
+	<input name="__PREVIOUSPAGE" id="__PREVIOUSPAGE" value="G5fvCphs1NIsPKcmp_iaVf1iodN1Zv_Eg7Lj3ql5Z9A1" type="hidden">
+</div>
+  <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$ScriptManager1', document.getElementById('aspnetForm'));
+Sys.WebForms.PageRequestManager.getInstance()._updateControls(['tctl00$ib1$up1','fctl00$rs1$WikiContent$ctl00$ItemUpdatePanel'], [], [], 90);
+//]]>
+</script>
+
+  
+  <div id="rheader">
+    
+
+<div class="mastheadfontbase">
+  <div>
+		<div class="GlobalBar">
+			<div class="Teaser">
+				
+			</div>
+			<div class="GlobalBarRight">
+			  <div class="LocaleFlyout">
+				  <div class="LocaleManagementFlyoutStatic" style="position: relative;" id="ctl00$Masthead1$LocaleManagement$ctl00"><a class="LocaleManagementFlyoutStaticLink" href="javascript:void(0)">United States - English&nbsp;</a><img class="LocaleManagementFlyoutPopArrow LibC_popdownarrow" src="xact_files/clear.gif" alt="Dropdown Arrow" style="border-width: 0px; height: 4px; width: 7px;"><div id="ctl00$Masthead1$LocaleManagement$ctl00_Popup" class="LocaleManagementFlyoutPopup" style="position: absolute; visibility: hidden; left: -65534px;">
+		<table style="width: 175px;" border="0">
+			<tbody><tr>
+				<td><a href="javascript:__doPostBack('ctl00$Masthead1$LocaleManagement$ctl00$ctl05','')">Argentina (Español)</a></td>
+			</tr><tr>
+				<td><a href="javascript:__doPostBack('ctl00$Masthead1$LocaleManagement$ctl00$ctl06','')">Australia (English)</a></td>
+			</tr><tr>
+				<td><a href="javascript:__doPostBack('ctl00$Masthead1$LocaleManagement$ctl00$ctl07','')">Brasil (Português)</a></td>
+			</tr><tr>
+				<td><a href="javascript:__doPostBack('ctl00$Masthead1$LocaleManagement$ctl00$ctl08','')">Canada (English)</a></td>
+			</tr><tr>
+				<td><a href="javascript:__doPostBack('ctl00$Masthead1$LocaleManagement$ctl00$ctl09','')">Canada (Français)</a></td>
+			</tr><tr>
+				<td><a href="javascript:__doPostBack('ctl00$Masthead1$LocaleManagement$ctl00$ctl10','')">中国 (简体中文)</a></td>
+			</tr><tr>
+				<td><a href="javascript:__doPostBack('ctl00$Masthead1$LocaleManagement$ctl00$ctl11','')">Colombia (Español)</a></td>
+			</tr><tr>
+				<td><a href="javascript:__doPostBack('ctl00$Masthead1$LocaleManagement$ctl00$ctl12','')">Deutschland (Deutsch)</a></td>
+			</tr><tr>
+				<td><a href="javascript:__doPostBack('ctl00$Masthead1$LocaleManagement$ctl00$ctl13','')">España (Español)</a></td>
+			</tr><tr>
+				<td><a href="javascript:__doPostBack('ctl00$Masthead1$LocaleManagement$ctl00$ctl14','')">France (Français)</a></td>
+			</tr><tr>
+				<td><a href="javascript:__doPostBack('ctl00$Masthead1$LocaleManagement$ctl00$ctl15','')">India (English)</a></td>
+			</tr><tr>
+				<td><a href="javascript:__doPostBack('ctl00$Masthead1$LocaleManagement$ctl00$ctl16','')">Italia (Italiano)</a></td>
+			</tr><tr>
+				<td><a href="javascript:__doPostBack('ctl00$Masthead1$LocaleManagement$ctl00$ctl17','')">日本 (日本語)</a></td>
+			</tr><tr>
+				<td><a href="javascript:__doPostBack('ctl00$Masthead1$LocaleManagement$ctl00$ctl18','')">México (Español)</a></td>
+			</tr><tr>
+				<td><a href="javascript:__doPostBack('ctl00$Masthead1$LocaleManagement$ctl00$ctl19','')">Perú (Español)</a></td>
+			</tr><tr>
+				<td><a href="javascript:__doPostBack('ctl00$Masthead1$LocaleManagement$ctl00$ctl20','')">Россия (Pусский)</a></td>
+			</tr><tr>
+				<td><a href="javascript:__doPostBack('ctl00$Masthead1$LocaleManagement$ctl00$ctl21','')">United Kingdom (English)</a></td>
+			</tr><tr>
+				<td><a href="javascript:__doPostBack('ctl00$Masthead1$LocaleManagement$ctl00$ctl22','')">United States (English)</a></td>
+			</tr><tr>
+				<td class="LocaleManagementFlyoutPopupHr"></td>
+			</tr><tr>
+				<td><a href="http://msdn.microsoft.com/en-us/ms376822.aspx">More...</a></td>
+			</tr>
+		</tbody></table></div><div id="ctl00$Masthead1$LocaleManagement$ctl00_Anim" class="TFlyPopupAnimate"></div>
+</div>
+
+
+
+		    </div>
+		    <div class="SiteMap">
+				  <div class="QuickLinksFlyoutStatic_msdn" style="position: relative;" id="ctl00$Masthead1$QuickLinks$ctrlFlyout"><a id="ctl00_Masthead1_QuickLinks_ctrlFlyout_ctrlTitle" title="Microsoft.com Quick Links" class="QuickLinksFlyoutStaticLink_msdn" href="javascript:void(0)"><span>Microsoft.com&nbsp;</span><img class="QuickLinksPopArrow LibC_popdownarrow" src="xact_files/clear.gif" alt="Dropdown arrow" style="border-width: 0px; height: 4px; width: 7px;"></a><div id="ctl00$Masthead1$QuickLinks$ctrlFlyout_Popup" class="QuickLinksFlyoutPopup" style="position: absolute; visibility: hidden; left: -65534px;">
+		<table><tbody><tr><td valign="top"><h4>Product Families</h4><div class="list"><div class="listitem"><a href="http://go.microsoft.com/?linkid=4447412">Office</a></div><div class="listitem"><a href="http://go.microsoft.com/?linkid=4447413">Windows</a></div><div class="listitem"><a href="http://go.microsoft.com/?linkid=4447414">Windows Server System</a></div><div class="listitem"><a href="http://go.microsoft.com/?linkid=4447415">Windows Mobile</a></div><div class="listitem"><a href="http://go.microsoft.com/?linkid=4447416">Developer Tools</a></div><div class="listitem"><a href="http://go.microsoft.com/?linkid=4447417">Business Solutions</a></div><div class="listitem"><a href="http://go.microsoft.com/?linkid=4447418">Games &amp; Xbox</a></div><div class="listitem"><a href="http://go.microsoft.com/?linkid=4447419">MSN</a></div></div></td><td valign="top"><h4>Resources</h4><div class="list"><div class="listitem"><a href="http://go.microsoft.com/?linkid=4447420">Microsoft Update</a></div><div class="listitem"><a href="http://go.microsoft.com/?linkid=4447421">Office Update</a></div><div class="listitem"><a href="http://go.microsoft.com/?linkid=4447422">Download Center</a></div><div class="listitem"><a href="http://go.microsoft.com/?linkid=4447423">Help &amp; Support</a></div><div class="listitem"><a href="http://go.microsoft.com/?linkid=4447424">Security</a></div><div class="listitem"><a href="http://go.microsoft.com/?linkid=4447425">Volume Licensing</a></div></div><h4>About Microsoft</h4><div class="list"><div class="listitem"><a href="http://go.microsoft.com/?linkid=4447426">Company Information</a></div><div class="listitem"><a href="http://go.microsoft.com/?linkid=4447427">Investor Relations</a></div><div class="listitem"><a href="http://go.microsoft.com/?linkid=4447428">PressPass for journalists</a></div></div></td><td valign="top"><h4>Popular Places</h4><div class="list"><div class="listitem"><a href="http://go.microsoft.com/?linkid=4447429">MSDN (Developers)</a></div><div class="listitem"><a href="http://go.microsoft.com/?linkid=4447430">TechNet (IT Pros)</a></div><div class="listitem"><a href="http://go.microsoft.com/?linkid=4447431">Microsoft At Home</a></div><div class="listitem"><a href="http://go.microsoft.com/?linkid=4447432">Microsoft At Work</a></div><div class="listitem"><a href="http://go.microsoft.com/?linkid=4447433">Business &amp; Industry</a></div><div class="listitem"><a href="http://go.microsoft.com/?linkid=4447434">Microsoft partners</a></div><div class="listitem"><a href="http://go.microsoft.com/?linkid=4447435">Microsoft hardware</a></div><div class="listitem"><a href="http://go.microsoft.com/?linkid=4447436">Product catalog</a></div><div class="listitem"><a href="http://go.microsoft.com/?linkid=4447437">Mactopia</a></div><div class="listitem"><a href="http://go.microsoft.com/?linkid=4447438">Microsoft.com site map</a></div></div></td></tr><tr><td colspan="10" class="QuickLinksFlyoutPopupHr"></td></tr><tr><td valign="top"><h4>Popular Searches</h4><div class="list"><div class="listitem"><a href="http://search.microsoft.com/results.aspx?mkt=en-US&amp;setlang=en-US&amp;q=templates">Templates</a></div><div class="listitem"><a href="http://search.microsoft.com/results.aspx?q=activesync&amp;l=1&amp;mkt=en-US&amp;FORM=QBME1">ActiveSync</a></div><div class="listitem"><a href="http://search.microsoft.com/results.aspx?q=clip+art&amp;l=1&amp;mkt=en-US&amp;FORM=QBME1">Clip art</a></div></div></td><td valign="top"><h4>Popular Downloads</h4><div class="list"><div class="listitem"><a href="http://www.microsoft.com/downloads/details.aspx?FamilyID=435bfce7-da2b-4a6a-afa4-f7f14e605a0d&amp;displaylang=en">Windows Defender Beta 2</a></div><div class="listitem"><a href="http://www.microsoft.com/downloads/results.aspx?pocId=&amp;freetext=directx&amp;DisplayLang=en">DirectX End-User Runtime</a></div><div class="listitem"><a href="http://www.microsoft.com/downloads">More popular downloads</a></div></div></td></tr></tbody></table></div><div id="ctl00$Masthead1$QuickLinks$ctrlFlyout_Anim" class="TFlyPopupAnimate"></div>
+</div>
+
+
+
+			  </div>
+			  <div class="PassportScarab">
+				  <span id="ctl00_Masthead1_UserRecognitionFlyout_lbwelcom" class="UserRecognitionStaticText">Welcome</span>
+
+  
+  
+<a id="idPPScarab" href="http://login.live.com/login.srf?wa=wsignin1.0&amp;rpsnv=10&amp;ct=1228615579&amp;rver=5.5.4177.0&amp;wp=MCLBI&amp;wlcxt=msdn%24msdn%24msdn&amp;wreply=http:%2F%2Fmsdn.microsoft.com%2Fen-us%2Flibrary%2Fbb203879.aspx&amp;lc=1033&amp;id=254354" onclick="MtpsLoginStatus.OverlayImagePath = &quot;http://i.msdn.microsoft.com:80/Platform/Controls/MtpsLoginStatus/resources/veil.gif&quot;; return MtpsLoginStatus.DoPassportSignIn('http://login.live.com/login.srf?wa=wsignin1.0&amp;rpsnv=10&amp;ct=1228615579&amp;rver=5.5.4177.0&amp;wp=MCLBI&amp;wlcxt=msdn%24msdn%24msdn&amp;wreply=http:%2F%2Fmsdn.microsoft.com%2FPlatform%2FControls%2FMtpsLoginStatus%2FPassport%2Fppsignin.htm&amp;lc=1033&amp;id=254354');"><span id="idPPScarabSIT" class="MTPS_GlobalToolbarLinks_msdn">Sign in</span></a>
+<div id="idPPMWOverlay" style="display: none;">
+</div>
+
+
+			  </div>
+			  
+			  
+		  </div>
+		</div>
+	</div>
+	<div class="ThinNavBox">
+		<a href="http://msdn.microsoft.com/en-us/default.aspx" id="ctl00_Masthead1_brandlink"><div id="ctl00_Masthead1_BrandLogo" class="BrandLogo">
+
+</div></a>
+		<div id="ctl00_Masthead1_ctl00_SearchBox" class="SearchBox">
+            <input name="ctl00$Masthead1$ctl00$returnSubmit" id="ctl00_Masthead1_ctl00_returnSubmit" style="visibility: hidden; display: none;" type="text">
+            <input style="color: rgb(170, 170, 170); font-style: italic;" autocomplete="off" name="ctl00$Masthead1$ctl00$SearchTextBox" id="ctl00_Masthead1_ctl00_SearchTextBox" title="Search MSDN with Live Search" class="TextBoxSearchActive" type="text"><ul style="border: 1px solid buttonshadow; padding: 1px; display: none; visibility: hidden; text-align: left; cursor: default; list-style-type: none; list-style-image: none; list-style-position: outside; position: absolute; z-index: 1000; background-color: rgb(255, 255, 255); color: rgb(0, 0, 0); width: 150px;"><li style="padding: 0px; text-align: left; font-family: Verdana,Arial,Helvetica,Sans-Serif; background-color: rgb(255, 255, 255); color: rgb(0, 0, 0); font-weight: bold;">Search MSDN with Live Search</li><li style="padding: 0px; text-align: left; font-family: Verdana,Arial,Helvetica,Sans-Serif; background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);">Search Microsoft.com with Live Search</li><li style="padding: 0px; text-align: left; font-family: Verdana,Arial,Helvetica,Sans-Serif; background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);">Search Entire Web with Live Search</li></ul><ul style="border: 1px solid buttonshadow; padding: 1px; display: none; visibility: hidden; text-align: left; cursor: default; list-style-type: none; list-style-image: none; list-style-position: outside; position: absolute; z-index: 1000; background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);"></ul>
+            <input name="ctl00$Masthead1$ctl00$SearchButton" id="ctl00_Masthead1_ctl00_SearchButton" title="Search MSDN with Live Search" class="SearchButton LibC_search SearchButtonFF" alt="Click here to search" src="xact_files/clear.gif" style="border-width: 0px;" type="image">
+            <input name="ctl00$Masthead1$ctl00$WebButton" value="Web" onclick="dolivesearch('ctl00_Masthead1_ctl00_SearchTextBox');" id="ctl00_Masthead1_ctl00_WebButton" title="Search Web" class="WebButton WebButtonFF WebButtonFF3" type="submit">
+            <input value="true" id="go" name="go" type="hidden">        
+<script type="text/javascript" defer="defer" src="xact_files/SearchBox.js" id="mscom.srch.searchBox"></script></div>
+		<div class="evergreenLinks">
+	    <div id="ctl00_Masthead1_CenterButtonArea" class="ThinNavTarget">
+	        <div class="thinnavtabright"></div>
+	        <div id="ctl00_Masthead1_CenterButton" class="BrowseCenter"><a id="ctl00_Masthead1_ctl01" onclick="javascript:Track('|Masthead|ctl00_Masthead1_CenterButton|ctl00_Masthead1_ctl01',this);" title="Developer Centers" href="http://msdn.microsoft.com/en-us/aa937802.aspx">Developer Centers</a></div>
+	        <div class="thinnavtableft"></div>
+      </div>
+      <div id="ctl00_Masthead1_SiteButtonArea" class="ThinNavTarget">
+	        <div class="thinnavtabright"></div>
+          <div id="ctl00_Masthead1_SiteButton" class="BrowseSite"><a id="ctl00_Masthead1_ctl02" onclick="javascript:Track('|Masthead|ctl00_Masthead1_SiteButton|ctl00_Masthead1_ctl02',this);" title="MSDN Home" href="http://msdn.microsoft.com/en-us/default.aspx">MSDN Home</a></div>
+	        <div class="thinnavtableft"></div>
+     </div>
+     </div>
+	</div>
+	<div class="Clear"></div>
+
+
+	<div class="NavigationBox">
+		<div id="ctl00_Masthead1_tabs_CenterTitle" class="HeaderTitle">XNA Developer Center</div>
+		<div class="Sponsor">
+		  
+		</div>
+		<div class="ClearLeft"></div>
+		<div id="ctl00_Masthead1_tabs_manTabsHolder" class="SiteNavigation">
+		<div class="SiteNavTabOffLeft msdn_TabC_msdn_SiteNavTabOff1Left"></div><div class="TabOff"><a id="ctl00_Masthead1_tabs_ctl01" onclick="javascript:Track('|TabStrip Link|ctl00_Masthead1_tabs_ctl00|ctl00_Masthead1_tabs_ctl01',this);" href="http://msdn.microsoft.com/en-us/xna/default.aspx">Home</a></div><div class="SiteNavTabOffRight msdn_TabC_msdn_SiteNavTabOff1Right"></div><div class="SiteNavTabOnLeft msdn_TabC_msdn_SiteNavTabOnLeft"></div><div class="TabOn"><a id="ctl00_Masthead1_tabs_ctl03" onclick="javascript:Track('|TabStrip Link|ctl00_Masthead1_tabs_ctl02|ctl00_Masthead1_tabs_ctl03',this);" href="http://msdn.microsoft.com/en-us/library/bb200104.aspx">Library</a></div><div class="SiteNavTabOnRight msdn_TabC_msdn_SiteNavTabOnRight"></div><div class="SiteNavTabOffLeft msdn_TabC_msdn_SiteNavTabOff1Left"></div><div class="TabOff"><a id="ctl00_Masthead1_tabs_ctl05" onclick="javascript:Track('|TabStrip Link|ctl00_Masthead1_tabs_ctl04|ctl00_Masthead1_tabs_ctl05',this);" href="http://msdn.microsoft.com/en-us/xna/bb219593.aspx">Learn</a></div><div class="SiteNavTabOffRight msdn_TabC_msdn_SiteNavTabOff1Right"></div><div class="SiteNavTabOffLeft msdn_TabC_msdn_SiteNavTabOff1Left"></div><div class="TabOff"><a id="ctl00_Masthead1_tabs_ctl07" onclick="javascript:Track('|TabStrip Link|ctl00_Masthead1_tabs_ctl06|ctl00_Masthead1_tabs_ctl07',this);" href="http://msdn.microsoft.com/en-us/xna/aa937795.aspx">Downloads</a></div><div class="SiteNavTabOffRight msdn_TabC_msdn_SiteNavTabOff1Right"></div><div class="SiteNavTabOffLeft msdn_TabC_msdn_SiteNavTabOff1Left"></div><div class="TabOff"><a id="ctl00_Masthead1_tabs_ctl09" onclick="javascript:Track('|TabStrip Link|ctl00_Masthead1_tabs_ctl08|ctl00_Masthead1_tabs_ctl09',this);" href="http://msdn.microsoft.com/en-us/xna/bb512920.aspx">Support</a></div><div class="SiteNavTabOffRight msdn_TabC_msdn_SiteNavTabOff1Right"></div><div class="SiteNavTabOffLeft msdn_TabC_msdn_SiteNavTabOff1Left"></div><div class="TabOff"><a id="ctl00_Masthead1_tabs_ctl11" onclick="javascript:Track('|TabStrip Link|ctl00_Masthead1_tabs_ctl10|ctl00_Masthead1_tabs_ctl11',this);" href="http://msdn.microsoft.com/en-us/xna/aa937785.aspx">Community</a></div><div class="SiteNavTabOffRight msdn_TabC_msdn_SiteNavTabOff1Right"></div></div>
+	</div>
+	<div class="Clear"></div>
+	<div id="ctl00_Masthead1_tabs_LocalNavigation" class="LocalNavigation" style="height: 2px;">
+	
+	</div>
+	<div class="cleartabstrip"></div>
+	<div id="ctl00_Masthead1_tabs_LocalNavBottom" class="LocalNavBottom"><img class="LibC_space" src="xact_files/clear.gif" style="border-width: 0px;" width="100%" height="1"></div>
+	
+</div>
+<div class="Clear"></div>
+    <div id="ctl00_ib1_Panel1" class="miniRatings">
+	
+  <div id="ctl00_ib1_miniRatings_left" class="miniRatings_left">
+		
+    <a id="ctl00_ib1_hlPrint" title="Print This Content" class="itPrint" onclick="javascript: WebForm_DoCallback('ctl00$ib1','printerFriendlyPage',GetServerData,null,null,false);" href="http://msdn.microsoft.com/en-us/library/bb203879%28printer%29.aspx"><img id="ctl00_ib1_imgPrint" class="LibC_rtg_print" src="xact_files/clear.gif" style="border-width: 0px;">&nbsp;Printer Friendly Version</a>&nbsp;&nbsp;
+    &nbsp;&nbsp;
+    <a id="ctl00_ib1_hlSendCont" title="Send This Content" class="itSend" onclick="javascript: WebForm_DoCallback('ctl00$ib1','sendThisPage',GetServerData,null,null,false);" href="mailto:?subject=How%20To%3a%20Add%20a%20Sound%20File%20to%20Your%20Game%20Using%20XACT&amp;body=This%20URL%20points%20to%20a%20page%20on%20MSDN%20that%20may%20interest%20you:%20http://msdn.microsoft.com/en-us/library/bb203879.aspx"><img id="ctl00_ib1_imgSendCont" class="LibC_rtg_email" src="xact_files/clear.gif" style="border-width: 0px;">Send</a>&nbsp;&nbsp;
+    <a id="ctl00_ib1_hlComCon" title="Click here to jump to the Community Content section on this page." class="itComCon" href="http://msdn.microsoft.com/en-us/library/Community-Signup.aspx?ru=http%3a%2f%2fmsdn.microsoft.com%2fen-us%2flibrary%2fbb203879%28XNAGameStudio.30%29.aspx%3fwbi%3dnew"><img id="ctl00_ib1_imgComCon" class="LibC_rtg_comCon" src="xact_files/clear.gif" style="border-width: 0px;">Add Content...</a>&nbsp;&nbsp;
+   
+	</div>
+  <div id="ctl00_ib1_up1">
+		
+      <div id="ctl00_ib1_miniRatings_right" class="miniRatings_right">
+			
+        <div class="ratingFlyoutStatic" style="position: relative;" id="ctl00$ib1$Flyout"><div id="ctl00_ib1_Flyout_rtgContainer" title="Click a star and provide feedback" style="display: block; text-align: right;">
+					
+              <table>
+                <tbody><tr>
+                  <td style="text-align: right; line-height: 70%;">
+                    <span id="ctl00_ib1_Flyout_rateTitleLabel" class="tbFont">Click to Rate and Give Feedback</span>
+                  </td>
+                  <td id="ctl00_ib1_Flyout_tdRtg" style="width: 85px;" onclick="if($get('ctl00_ib1_Flyout_tbComments')!=null) $get('ctl00_ib1_Flyout_tbComments').focus();">
+                      <div id="ctl00_ib1_Flyout_Rating1" title="Click a star and provide feedback" dir="ltr">
+						<input name="ctl00$ib1$Flyout$Rating1_RatingExtender_ClientState" id="ctl00_ib1_Flyout_Rating1_RatingExtender_ClientState" value="0" type="hidden"><a href="#" id="ctl00_ib1_Flyout_Rating1_A" title="Click a star and provide feedback" style="text-decoration: none;"><span id="ctl00_ib1_Flyout_Rating1_Star_1" class="ratingStar emptyRatingStar" style="float: left;">&nbsp;</span><span id="ctl00_ib1_Flyout_Rating1_Star_2" class="ratingStar emptyRatingStar" style="float: left;">&nbsp;</span><span id="ctl00_ib1_Flyout_Rating1_Star_3" class="ratingStar emptyRatingStar" style="float: left;">&nbsp;</span><span id="ctl00_ib1_Flyout_Rating1_Star_4" class="ratingStar emptyRatingStar" style="float: left;">&nbsp;</span><span id="ctl00_ib1_Flyout_Rating1_Star_5" class="ratingStar emptyRatingStar" style="float: left;">&nbsp;</span></a>
+					</div>
+                  </td>
+					
+                </tr>
+              </tbody></table>
+            
+				</div>
+            <div style="display: block; float: none; clear: both;">
+            </div>
+          <div id="ctl00$ib1$Flyout_Popup" class="ratingFlyoutPopup" style="position: absolute; visibility: hidden; left: -65534px;">
+					<span id="ctl00_ib1_Flyout_lbOptText" class="OptionalText">Give feedback on this content</span><textarea name="ctl00$ib1$Flyout$tbComments" rows="2" cols="20" id="ctl00_ib1_Flyout_tbComments" class="Comment"></textarea><input name="ctl00$ib1$Flyout$btnClose" id="ctl00_ib1_Flyout_btnClose" class="Button" value="Close" onclick='CloseFLY("ctl00$ib1$Flyout") ' type="button"><input name="ctl00$ib1$Flyout$btnSubmit" value="Send" onclick="return IsPageRated(&quot;ctl00_ib1_Flyout_Rating1&quot;,&quot;ctl00_ib1_Flyout_lbOptText&quot;,'Please rate the page first.', &quot;ctl00$ib1$Flyout&quot;,this);" id="ctl00_ib1_Flyout_btnSubmit" title="Send This Content" class="Button" type="submit"></div><div id="ctl00$ib1$Flyout_Anim" class="TFlyPopupAnimate"></div>
+			</div>
+			
+      
+		</div>
+    
+	</div>
+  <div style="display: block; clear: both; visibility: hidden;"></div>
+
+</div>
+
+  </div>
+  <div id="contents">
+    <div id="ctl00_rs1_ra1" class="resizableArea">
+	<div id="ctl00_rs1_raLeft" class="leftSection" style="width: 300px;">
+		
+        <img id="ctl00_rs1_TocVector1_o" class="hidden" src="xact_files/clear.gif" style="border-width: 0px;">
+<img id="ctl00_rs1_TocVector1_c" class="hidden" src="xact_files/clear.gif" style="border-width: 0px;">
+<img id="ctl00_rs1_TocVector1_e" class="hidden" src="xact_files/clear.gif" style="border-width: 0px;">
+<div id="holder" onclick="TocClick(event)">
+<div id="ctl00_rs1_TocVector1_root" class="rootToc">
+			<ul class="toc" id="tocVectorTreeId"><li name="ms310241(n)"><img src="xact_files/clear.gif" class="LibC_o"><a href="http://msdn.microsoft.com/en-us/library/ms123401.aspx" target="_top">MSDN Library</a><ul class="toc"><li name="dd200930(n)"><img src="xact_files/clear.gif" class="LibC_c"><a href="http://msdn.microsoft.com/en-us/library/dd163896.aspx" target="_top">Azure Services Platform</a></li><li name="cc295789(n)"><img src="xact_files/clear.gif" class="LibC_c"><a href="http://msdn.microsoft.com/en-us/library/cc295789.aspx" target="_top">Design Tools</a></li><li name="aa187916(n)"><img src="xact_files/clear.gif" class="LibC_o"><a href="http://msdn.microsoft.com/en-us/library/aa187916.aspx" target="_top">Development Tools and Languages</a><ul class="toc"><li name="aa187917(n)"><img src="xact_files/clear.gif" class="LibC_c"><a href="http://msdn.microsoft.com/en-us/library/aa187917.aspx" target="_top">Visual Studio 2008</a></li><li name="aa187919(n)"><img src="xact_files/clear.gif" class="LibC_c"><a href="http://msdn.microsoft.com/en-us/library/ms950416.aspx" target="_top">Visual Studio 2005</a></li><li name="aa973739(vs.71,n)"><img src="xact_files/clear.gif" class="LibC_c"><a href="http://msdn.microsoft.com/en-us/library/aa973739%28vs.71%29.aspx" target="_top">Visual Studio .NET</a></li><li name="aa187935(n)"><img src="xact_files/clear.gif" class="LibC_o"><a href="http://msdn.microsoft.com/en-us/library/aa187935.aspx" target="_top">XNA Game Studio</a><ul class="toc"><li name="dd253701(n)"><img src="xact_files/clear.gif" class="LibC_o"><a href="http://msdn.microsoft.com/en-us/library/bb200104.aspx" target="_top">XNA Game Studio 3.0</a><ul class="toc"><li name="na"><img src="xact_files/clear.gif" class="LibC_e"><a href="http://msdn.microsoft.com/en-us/library/bb203941.aspx" target="_top">Frequently Asked Questions and Known Issues</a></li><li name="na"><img src="xact_files/clear.gif" class="LibC_e"><a href="http://msdn.microsoft.com/en-us/library/bb417503.aspx" target="_top">What's New in This Release</a></li><li name="dd253702(n)"><img src="xact_files/clear.gif" class="LibC_c"><a href="http://msdn.microsoft.com/en-us/library/bb203894.aspx" target="_top">Getting Started with XNA Game Studio</a></li><li name="dd253705(n)"><img src="xact_files/clear.gif" class="LibC_c"><a href="http://msdn.microsoft.com/en-us/library/bb199638.aspx" target="_top">Using XNA Game Studio</a></li><li name="dd253708(n)"><img src="xact_files/clear.gif" class="LibC_o"><a href="http://msdn.microsoft.com/en-us/library/bb198548.aspx" target="_top">Programming Guide</a><ul class="toc"><li name="na"><img src="xact_files/clear.gif" class="LibC_e"><a href="http://msdn.microsoft.com/en-us/library/bb975874.aspx" target="_top">Game Programming Basics</a></li><li name="dd282514(n)"><img src="xact_files/clear.gif" class="LibC_c"><a href="http://msdn.microsoft.com/en-us/library/bb203887.aspx" target="_top">Content Pipeline</a></li><li name="dd282515(n)"><img src="xact_files/clear.gif" class="LibC_c"><a href="http://msdn.microsoft.com/en-us/library/bb203871.aspx" target="_top">Application Model</a></li><li name="dd282516(n)"><img src="xact_files/clear.gif" class="LibC_c"><a href="http://msdn.microsoft.com/en-us/library/bb197298.aspx" target="_top">Graphics</a></li><li name="dd282521(n)"><img src="xact_files/clear.gif" class="LibC_c"><a href="http://msdn.microsoft.com/en-us/library/bb203904.aspx" target="_top">Math</a></li><li name="dd282522(n)"><img src="xact_files/clear.gif" class="LibC_c"><a href="http://msdn.microsoft.com/en-us/library/bb203899.aspx" target="_top">Input</a></li><li name="dd282523(n)"><img src="xact_files/clear.gif" class="LibC_o"><a href="http://msdn.microsoft.com/en-us/library/bb195038.aspx" target="_top">Audio</a><ul class="toc"><li name="na"><img src="xact_files/clear.gif" class="LibC_e"><a href="http://msdn.microsoft.com/en-us/library/bb195055.aspx" target="_top">Audio Overview</a></li><li name="na"><img src="xact_files/clear.gif" class="LibC_e"><a href="http://msdn.microsoft.com/en-us/library/dd231913.aspx" target="_top">Attenuation and Doppler Pitch Shifting Overview</a></li><li name="na"><img src="xact_files/clear.gif" class="LibC_e"><a href="http://msdn.microsoft.com/en-us/library/bb195053.aspx" target="_top">How To: Play a Sound</a></li><li name="na"><img src="xact_files/clear.gif" class="LibC_e"><a href="http://msdn.microsoft.com/en-us/library/dd231914.aspx" target="_top">How To: Play a Song</a></li><li name="na"><img src="xact_files/clear.gif" class="LibC_e"><a href="http://msdn.microsoft.com/en-us/library/dd231917.aspx" target="_top">How To: Stream a Sound</a></li><li name="na"><img src="xact_files/clear.gif" class="LibC_e"><a class="tocSelected" href="http://msdn.microsoft.com/en-us/library/bb203879.aspx" target="_top">How To: Add a Sound File to Your Game Using XACT</a></li><li name="na"><img src="xact_files/clear.gif" class="LibC_e"><a href="http://msdn.microsoft.com/en-us/library/dd231915.aspx" target="_top">How To: Play a Sound Using XACT</a></li><li name="na"><img src="xact_files/clear.gif" class="LibC_e"><a href="http://msdn.microsoft.com/en-us/library/dd231916.aspx" target="_top">How To: Specify Background Music Using XACT</a></li><li name="na"><img src="xact_files/clear.gif" class="LibC_e"><a href="http://msdn.microsoft.com/en-us/library/bb203880.aspx" target="_top">How To: Stop or Pause a Sound</a></li><li name="na"><img src="xact_files/clear.gif" class="LibC_e"><a href="http://msdn.microsoft.com/en-us/library/bb195052.aspx" target="_top">How To: Change Sound Volume Levels</a></li><li name="na"><img src="xact_files/clear.gif" class="LibC_e"><a href="http://msdn.microsoft.com/en-us/library/bb447687.aspx" target="_top">How To: Apply Basic 3D Positional Effects to a Cue</a></li><li name="na"><img src="xact_files/clear.gif" class="LibC_e"><a href="http://msdn.microsoft.com/en-us/library/bb447686.aspx" target="_top">How To: Apply Attenuation and Doppler 3D Audio Effects</a></li></ul></li><li name="dd254219(n)"><img src="xact_files/clear.gif" class="LibC_c"><a href="http://msdn.microsoft.com/en-us/library/dd254845.aspx" target="_top">Media</a></li><li name="dd282524(n)"><img src="xact_files/clear.gif" class="LibC_c"><a href="http://msdn.microsoft.com/en-us/library/bb199073.aspx" target="_top">Storage</a></li><li name="dd282525(n)"><img src="xact_files/clear.gif" class="LibC_c"><a href="http://msdn.microsoft.com/en-us/library/dd254747.aspx" target="_top">Gamer Services</a></li><li name="dd253709(n)"><img src="xact_files/clear.gif" class="LibC_c"><a href="http://msdn.microsoft.com/en-us/library/bb975801.aspx" target="_top">Networking</a></li><li name="dd253710(n)"><img src="xact_files/clear.gif" class="LibC_c"><a href="http://msdn.microsoft.com/en-us/library/bb975657.aspx" target="_top">Hardware and Platforms</a></li><li name="dd253711(n)"><img src="xact_files/clear.gif" class="LibC_c"><a href="http://msdn.microsoft.com/en-us/library/dd254702.aspx" target="_top">Extended Tutorials</a></li></ul></li><li name="dd253731(n)"><img src="xact_files/clear.gif" class="LibC_c"><a href="http://msdn.microsoft.com/en-us/library/bb203940.aspx" target="_top">XNA Framework Class Library Reference</a></li><li name="dd262284(n)"><img src="xact_files/clear.gif" class="LibC_c"><a href="http://msdn.microsoft.com/en-us/library/bb195587.aspx" target="_top">Content Pipeline Class Library Reference</a></li><li name="dd254214(n)"><img src="xact_files/clear.gif" class="LibC_c"><a href="http://msdn.microsoft.com/en-us/library/bb199829.aspx" target="_top">White Papers</a></li><li name="na"><img src="xact_files/clear.gif" class="LibC_e"><a href="http://msdn.microsoft.com/en-us/library/bb976089.aspx" target="_top">XNA Creators Club Online Web Site</a></li><li name="na"><img src="xact_files/clear.gif" class="LibC_e"><a href="http://msdn.microsoft.com/en-us/library/bb200103.aspx" target="_top">Copyright Notice</a></li></ul></li><li name="dd253701(XNAGameStudio.20,n)"><img src="xact_files/clear.gif" class="LibC_c"><a href="http://msdn.microsoft.com/en-us/library/bb200104%28XNAGameStudio.20%29.aspx" target="_top">XNA Game Studio 2.0</a></li><li name="dd253701(XNAGameStudio.10,n)"><img src="xact_files/clear.gif" class="LibC_c"><a href="http://msdn.microsoft.com/en-us/library/bb200104%28XNAGameStudio.10%29.aspx" target="_top">XNA Game Studio Express</a></li></ul></li><li name="aa139594(n)"><img src="xact_files/clear.gif" class="LibC_c"><a href="http://msdn.microsoft.com/en-us/library/ms950417.aspx" target="_top">Visual Studio 6.0</a></li><li name="aa468128(n)"><img src="xact_files/clear.gif" class="LibC_c"><a href="http://msdn.microsoft.com/en-us/library/ms950411.aspx" target="_top">Visual FoxPro</a></li><li name="bb881626(n)"><img src="xact_files/clear.gif" class="LibC_c"><a href="http://msdn.microsoft.com/en-us/library/bb881626.aspx" target="_top">Microsoft Robotics</a></li><li name="cc178930(n)"><img src="xact_files/clear.gif" class="LibC_c"><a href="http://msdn.microsoft.com/en-us/library/ms717422.aspx" target="_top">Windows SDK</a></li></ul></li><li name="ms376734(n)"><img src="xact_files/clear.gif" class="LibC_c"><a href="http://msdn.microsoft.com/en-us/library/ms376734.aspx" target="_top">Mobile and Embedded Development</a></li><li name="aa139615(n)"><img src="xact_files/clear.gif" class="LibC_c"><a href="http://msdn.microsoft.com/en-us/library/aa139615.aspx" target="_top">.NET Development</a></li><li name="ms400535(n)"><img src="xact_files/clear.gif" class="LibC_c"><a href="http://msdn.microsoft.com/en-us/library/bb726434.aspx" target="_top">Office Development</a></li><li name="cc203350(n)"><img src="xact_files/clear.gif" class="LibC_c"><a href="http://msdn.microsoft.com/en-us/library/cc203350.aspx" target="_top">Open Specifications</a></li><li name="aa155072(n)"><img src="xact_files/clear.gif" class="LibC_c"><a href="http://msdn.microsoft.com/en-us/library/aa155072.aspx" target="_top">Servers and Enterprise Development</a></li><li name="aa155073(n)"><img src="xact_files/clear.gif" class="LibC_c"><a href="http://msdn.microsoft.com/en-us/library/aa155073.aspx" target="_top">Web Development</a></li><li name="aa139672(n)"><img src="xact_files/clear.gif" class="LibC_c"><a href="http://msdn.microsoft.com/en-us/library/aa139672.aspx" target="_top">Win32 and COM Development</a></li></ul></li></ul>
+		</div>
+</div>
+
+
+      
+	</div><div class="splitter" title="Click and drag to resize. Double click or press 't' to toggle visibility." style="left: 300px;" id="ctl00_rs1_raSplitter" onmousedown="ra_resizeStart(event,this,'ctl00_rs1_raLeft')" onmouseup="ra_resizeStop()" onmouseover="HighlightSplitterBar(this.id,0);" onmouseout="HighlightSplitterBar(this.id,1);" ondblclick="ra_OpenCollapse('ctl00_rs1_raSplitter','ctl00_rs1_raLeft')"><div class="LibC_lib_grippy" style="position: absolute; top: 50%;"></div></div><div id="ctl00_rs1_raRight" class="rightSection" onkeyup=' ra_keyPress(window.event?window.event:event, "ctl00_rs1_raSplitter","ctl00_rs1_raLeft")'>
+		
+        <div>
+          <div id="ctl00_rs1_eb1_Panel1" class="EyebrowMenuBar">
+			
+<div class="stat" style="position: relative;" id="ctl00$rs1$eb1$ctl00"><a title="MSDN" href="http://msdn.microsoft.com/en-us/ms348103.aspx">MSDN</a><div id="ctl00$rs1$eb1$ctl00_Popup" class="popup" style="position: absolute; visibility: hidden; left: -65534px; width: 71px; height: 21px;">
+					<span name="http://msdn.microsoft.com/en-us/library/36cf08ac-18d1-4fe0-abc8-466852a0f9c7(n).aspx">Please Wait</span></div><div id="ctl00$rs1$eb1$ctl00_Anim" class="TFlyPopupAnimate"></div>
+			</div>
+			<div class="stat" style="position: relative;" id="ctl00$rs1$eb1$ctl01"><a title="MSDN Library" href="http://msdn.microsoft.com/en-us/library/ms123401.aspx">MSDN Library</a><div id="ctl00$rs1$eb1$ctl01_Popup" class="popup" style="position: absolute; visibility: hidden; left: -65534px; width: 71px; height: 21px;">
+					<span name="http://msdn.microsoft.com/en-us/library/ms310241(n).aspx">Please Wait</span></div><div id="ctl00$rs1$eb1$ctl01_Anim" class="TFlyPopupAnimate"></div>
+			</div>
+			<div class="stat" style="position: relative;" id="ctl00$rs1$eb1$ctl02"><a title="Development Tools and Languages" href="http://msdn.microsoft.com/en-us/library/aa187916.aspx">Development Tools and Languages</a><div id="ctl00$rs1$eb1$ctl02_Popup" class="popup" style="position: absolute; visibility: hidden; left: -65534px; width: 71px; height: 21px;">
+					<span name="http://msdn.microsoft.com/en-us/library/aa187916(n).aspx">Please Wait</span></div><div id="ctl00$rs1$eb1$ctl02_Anim" class="TFlyPopupAnimate"></div>
+			</div>
+			<div class="stat" style="position: relative;" id="ctl00$rs1$eb1$ctl03"><a title="XNA Game Studio" href="http://msdn.microsoft.com/en-us/library/aa187935.aspx">XNA Game Studio</a><div id="ctl00$rs1$eb1$ctl03_Popup" class="popup" style="position: absolute; visibility: hidden; left: -65534px; width: 71px; height: 21px;">
+					<span name="http://msdn.microsoft.com/en-us/library/aa187935(n).aspx">Please Wait</span></div><div id="ctl00$rs1$eb1$ctl03_Anim" class="TFlyPopupAnimate"></div>
+			</div>
+			<div class="stat" style="position: relative;" id="ctl00$rs1$eb1$ctl04"><a title="XNA Game Studio 3.0" href="http://msdn.microsoft.com/en-us/library/bb200104.aspx">XNA Game Studio 3.0</a><div id="ctl00$rs1$eb1$ctl04_Popup" class="popup" style="position: absolute; visibility: hidden; left: -65534px; width: 71px; height: 21px;">
+					<span name="http://msdn.microsoft.com/en-us/library/dd253701(n).aspx">Please Wait</span></div><div id="ctl00$rs1$eb1$ctl04_Anim" class="TFlyPopupAnimate"></div>
+			</div>
+			<div class="stat" style="position: relative;" id="ctl00$rs1$eb1$ctl05"><a title="Programming Guide" href="http://msdn.microsoft.com/en-us/library/bb198548.aspx">Programming Guide</a><div id="ctl00$rs1$eb1$ctl05_Popup" class="popup" style="position: absolute; visibility: hidden; left: -65534px; width: 71px; height: 21px;">
+					<span name="http://msdn.microsoft.com/en-us/library/dd253708(n).aspx">Please Wait</span></div><div id="ctl00$rs1$eb1$ctl05_Anim" class="TFlyPopupAnimate"></div>
+			</div>
+			<div class="stat" style="position: relative;" id="ctl00$rs1$eb1$ctl06"><a title="Audio" href="http://msdn.microsoft.com/en-us/library/bb195038.aspx">Audio</a><div id="ctl00$rs1$eb1$ctl06_Popup" class="popup" style="position: absolute; visibility: hidden; left: -65534px; width: 71px; height: 21px;">
+					<span name="http://msdn.microsoft.com/en-us/library/dd282523(n).aspx">Please Wait</span></div><div id="ctl00$rs1$eb1$ctl06_Anim" class="TFlyPopupAnimate"></div>
+			</div>
+			<div class="nochildstat"><strong>&nbsp;How To: Add a Sound File to Your Ga...</strong></div><span style="float: none; clear: both; display: block;"></span>
+		</div>
+
+        </div>
+        
+
+        <div class="RightPanel">
+          <div class="ContentBar">
+            <div id="ctl00_rs1_ExpandCollapse_ECDiv" class="ECPanel"><img id="ctl00_rs1_ExpandCollapse_ECImg" class="LibC_o" onclick="EC_Click()" src="xact_files/clear.gif" alt="Collapse All/Expand All" style="border-width: 0px;" align="middle"><a id="ctl00_rs1_ExpandCollapse_ECLink" class="ECLink" href="javascript:EC_Click()">Collapse All</a></div>
+            
+<style type="text/css">
+.vb, .cs, .cpp, .nu
+{
+	display:none;
+}
+</style>
+<style id="LanguageSpecificTextStyle" type="text/css">
+.nu
+{
+   display:inline;
+}
+</style>
+              
+            
+            
+          </div>
+
+        <div class="ContentArea">
+          
+          
+          
+          <!--starting processing--><div class="topic"><div class="majorTitle">XNA Game Studio 3.0<!----></div><div class="title">How To: Add a Sound File to Your Game Using XACT<!----></div><!--Content type: DocStudio. Transform: devdiv2mtps.xslt.--><div id="mainSection"><div id="mainBody">
+  
+  
+  <p>
+Demonstrates how to add wave (.WAV) files to an XACT project that can
+be built and interpreted by an XNA Game Studio game to play audio. </p>
+  <p> For detailed information about how to author audio in
+the XACT tool, including information on categories, variables, and
+other advanced features, see <a id="ctl00_rs1_mainContentContainer_ctl01" onclick="javascript:Track('ctl00_rs1_mainContentContainer_ctl00|ctl00_rs1_mainContentContainer_ctl01',this);" href="http://msdn2.microsoft.com/en-us/library/bb172314.aspx">XACT Audio Authoring</a>.
+  </p>
+  <a id="ID2E6"><!----></a><h1 class="heading">Adding a Sound File to Your Game</h1><div id="ID2E61" class="hxnx1">
+    
+    <div class="proc"><h3 class="subHeading">To create a wave bank and a sound bank</h3><div class="subSection">
+      
+      <ol>
+        <li>
+          <p>
+            From the <strong>Start</strong> menu, click <strong>All Programs</strong>, click <strong>XNA Game Studio 3.0</strong>, click <strong>Tools</strong>, and then click <strong>Microsoft Cross-Platform Audio Creation Tool (XACT)</strong>.
+          </p>
+        </li>
+        <li>
+          <p>
+            To create a new project, click the <strong>File</strong> menu, and then click <strong>New Project</strong>.
+          </p>
+          <p>
+            You will be asked for a location and a name for your project.
+          </p>
+        </li>
+        <li>
+          <p>
+            Enter a name and a location that is easy for you to remember, and click <strong>OK</strong>.
+          </p>
+          <p>
+            The project will be created, and the screen will resemble the following:
+          </p>
+          <!--src=[xact_tutorial_1a.jpg]--><img alt="Bb203879.xact_tutorial_1a(en-US,XNAGameStudio.30).jpg" src="xact_files/Bb203879_003.jpg">
+        </li>
+        <li>
+          <p>
+            In the empty project, create a wave bank. To do this, click <strong>Wave Banks</strong>, and then click <strong>New Wave Bank</strong>.
+          </p>
+          <p>
+            A new wave bank appears in the tree view under Wave Banks with the default name "Wave Bank."
+          </p>
+        </li>
+        <li>
+          <p>
+            Press <strong>ENTER</strong> to accept the default name.
+          </p>
+        </li>
+        <li>
+          <p>
+            To create a new sound bank, click <strong>Sound Banks</strong>, and then click <strong>New Sound Bank</strong>.
+          </p>
+          <p>
+            A new sound bank appears in the tree view under Sound Banks with the default name "Sound Bank."
+          </p>
+        </li>
+        <li>
+          <p>
+            Press <strong>ENTER</strong> to accept the default name.
+          </p>
+          <p>
+            At this point, two new windows have appeared: one for the wave bank and one for the sound bank.
+          </p>
+        </li>
+        <li>
+          <p>
+            To arrange these windows for easier viewing, click <strong>Window</strong>, and then click <strong>Tile Horizontally</strong>.
+          </p>
+          <p>
+            The windows should now look similar to the following:
+          </p>
+          <!--src=[xact_tutorial_4a.jpg]--><img alt="Bb203879.xact_tutorial_4a(en-US,XNAGameStudio.30).jpg" src="xact_files/Bb203879_004.jpg">
+        </li>
+      </ol>
+      </div></div>
+    <div class="proc"><h3 class="subHeading">To add wave files to the wave bank window</h3><div class="subSection">
+      
+      <p>
+        Now you need to add your wave file to the wave bank window.
+        </p>
+        <ol>
+          <li>
+            <p>
+              To make sure the wave bank window is active, click <strong>Wave Banks</strong>, and then click <strong>Insert Wave File(s)</strong>.
+              </p>
+          </li>
+          <li>
+            <p>
+              Insert one or more wave files into the wave bank.
+            </p>
+            <p>
+              If you successfully added them, they will look similar to the following wave bank window:
+            </p>
+            <!--src=[xact_tutorial_2a.jpg]--><img alt="Bb203879.xact_tutorial_2a(en-US,XNAGameStudio.30).jpg" src="xact_files/Bb203879.jpg">
+            <p>
+              Now you need to perform the following step for each wave listed in the wave bank window.
+            </p>
+          </li>
+          <li>
+            <p>
+For each wave listed in the wave bank window, drag the wave from the
+wave bank window to the sound bank window, and then drop the wave on
+top of the <strong>Cue Name</strong> panel.
+            </p>
+            <p>
+XACT automatically creates a new cue that is linked to a new sound that
+plays this wave file. It should look similar to the following: </p>
+            <!--src=[xact_tutorial_3a.jpg]--><img alt="Bb203879.xact_tutorial_3a(en-US,XNAGameStudio.30).jpg" src="xact_files/Bb203879_002.jpg">
+          </li>
+          <li>
+            <p>
+If the lower-left corner of the sound bank window does not have any
+entries, add entries to it by dragging each sound from the upper-left
+panel of the sound bank to the lower left panel of the sound bank. </p>
+            <p>
+              This action creates cues that correspond to the sounds.
+            </p>
+          </li>
+          <li>
+            <p>
+              To save the project, click <strong>File</strong>, and then click <strong>Save Project</strong>.
+            </p>
+          </li>
+          <li>
+            <p>
+              Click <strong>File</strong>, and then <strong>Build...</strong> to build your project.
+            </p>
+          </li>
+        </ol>
+      </div></div>
+    <p>
+      You are now ready to load and play sounds from this project in your game. See <a id="ctl00_rs1_mainContentContainer_ctl06" onclick="javascript:Track('ctl00_rs1_mainContentContainer_ctl00|ctl00_rs1_mainContentContainer_ctl06',this);" href="http://msdn.microsoft.com/en-us/library/bb195053.aspx">How To: Play a Sound</a> for information on how to do this.
+    </p>
+  </div>
+<a id="ID2E3G"><!----></a><div id="ctl00_rs1_mainContentContainer_cpe351034" class="MTPS_CollapsibleRegion">
+			<div id="ctl00_rs1_mainContentContainer_cpe351034_h" class="CollapseRegionLink">
+				<img id="ctl00_rs1_mainContentContainer_cpe351034_i" class="LibC_o" src="xact_files/clear.gif" style="border-width: 0px; vertical-align: middle;">&nbsp;See Also
+			</div><div style="overflow: visible; display: block; height: auto; width: 664px;" id="ctl00_rs1_mainContentContainer_cpe351034_c" class="MTPS_CollapsibleSection"><div style="display: block;" id="" class="MTPS_CollapsibleSection">
+				<a id="seeAlsoToggle"><!----></a>
+  <a id="ID2E5G"><!----></a><h4 class="subHeading">Tasks</h4><div id="ID2E5G1" class="hxnx3">
+    
+        <a id="ctl00_rs1_mainContentContainer_ctl10" onclick="javascript:Track('ctl00_rs1_mainContentContainer_cpe351034_c|ctl00_rs1_mainContentContainer_ctl10',this);" href="http://msdn.microsoft.com/en-us/library/bb195053.aspx">How To: Play a Sound</a><br>
+    </div>
+  
+			</div></div>
+		</div>
+  </div></div></div>
+
+          
+          
+          
+              
+          
+          
+                    
+
+          
+          
+        </div>
+      </div>
+
+      
+
+<span id="CommunityContent"></span>
+<div id="ctl00_rs1_WikiContent_cc" class="CCS_Container">
+			
+
+  <div class="CCS_TopicTagEditor">
+	  <div id="ctl00_rs1_WikiContent_TopicTagEditor_panel" class="CCT_Panel">
+  <div id="tagsPanel" class="CCT_TagsPanel">
+    <span id="ctl00_rs1_WikiContent_TopicTagEditor_title" class="CCT_Title">Tags</span>
+    <a href="http://msdn.microsoft.com/platform/Controls/CCTagEditor/resources/taghelp.htm" id="ctl00_rs1_WikiContent_TopicTagEditor_helpLink" class="CCT_HelpLink" onclick='CCS_ShowHelp("/platform/Controls/CCTagEditor/resources/taghelp.htm",800,600);return false;'>
+      <img src="xact_files/clear.gif" id="ctl00_rs1_WikiContent_TopicTagEditor_helpImage" class="CCT_HelpImage LibC_help" alt="What's this?" title="What's this?"></a>:
+    <span id="ctl00_rs1_WikiContent_TopicTagEditor_tags" class="CCT_Text"></span>
+    <span id="ctl00_rs1_WikiContent_TopicTagEditor_view" class="CCT_View">
+      <a href="http://msdn.microsoft.com/Platform/Controls/CCTagEditor/#" id="ctl00_rs1_WikiContent_TopicTagEditor_addTagLink" class="CCT_LinkButton" onclick='return CCT_AddATag("http://msdn.microsoft.com/en-us/library/Community-Signup.aspx?ru=http%3a%2f%2fmsdn.microsoft.com%2fen-us%2flibrary%2fbb203879(XNAGameStudio.30).aspx",-1);' title="Add a tag to this topic">Add a tag</a>
+    </span>
+
+    <span id="ctl00_rs1_WikiContent_TopicTagEditor_editPanel" style="display: none;" class="CCT_Edit">
+      <input name="ctl00$rs1$WikiContent$TopicTagEditor$textbox" id="ctl00_rs1_WikiContent_TopicTagEditor_textbox" class="CCT_TextBox" autocomplete="off" type="text">
+      <a href="http://msdn.microsoft.com/Platform/Controls/CCTagEditor/#" id="ctl00_rs1_WikiContent_TopicTagEditor_addLink" class="CCT_LinkButton" onclick="return CCT_AddTags(-1);" title="Submit the tags for this topic">Add</a>
+
+      &nbsp;
+      <a href="http://msdn.microsoft.com/Platform/Controls/CCTagEditor/#" id="ctl00_rs1_WikiContent_TopicTagEditor_cancelLink" class="CCT_LinkButton" onclick="return CCT_CancelAddTag(-1);" title="Cancel this operation">Cancel</a>
+    </span>
+    <span id="ctl00_rs1_WikiContent_TopicTagEditor_messagePanel" class="CCT_Message"></span>
+  </div>
+  <div id="ctl00_rs1_WikiContent_TopicTagEditor_flagAsPanel" class="CCT_FlagAsPanel" style="display: none;">
+    <span id="ctl00_rs1_WikiContent_TopicTagEditor_flagAsLabel">Flag as </span>
+    <a href="http://msdn.microsoft.com/Platform/Controls/CCTagEditor/#" id="ctl00_rs1_WikiContent_TopicTagEditor_contentBugLink" class="CCT_LinkButton" onclick='return CCT_FlagContentBug("http://msdn.microsoft.com/en-us/library/Community-Signup.aspx?ru=http%3a%2f%2fmsdn.microsoft.com%2fen-us%2flibrary%2fbb203879(XNAGameStudio.30).aspx",-1);' title="Flagging this annotation as a 'ContentBug' will let the author know that this topic needs to be reviewed">ContentBug</a>
+  </div>
+  <div style="clear: both;"></div>
+</div>
+
+  </div>
+
+  <div class="CCS_WikiLogo">
+	  <img id="ctl00_rs1_WikiContent_wikiLogo" class="LibC_wiki" src="xact_files/clear.gif" style="border-width: 0px;">
+  </div>
+
+  <div id="ctl00_rs1_WikiContent_contentContainer" class="CCS_ContentContainer">
+				
+    <div id="ctl00_rs1_WikiContent_headerContainer" class="CCS_HeaderContainer">
+					
+			<table class="CCS_Header" border="0" cellpadding="0" cellspacing="0" width="100%">
+				<tbody><tr>
+					<td>
+  					<div class="CCS_HeaderTitle">
+  					  <span id="ctl00_rs1_WikiContent_headerTitle">Community Content</span>&nbsp;&nbsp;
+              <a href="http://msdn.microsoft.com/platform/Controls/CCSection/resources/cchelp.htm" id="ctl00_rs1_WikiContent_helpLink" class="CCS_HelpLink" onclick='CCS_ShowHelp("/platform/Controls/CCSection/resources/cchelp.htm",400,400);return false;'><img src="xact_files/clear.gif" id="ctl00_rs1_WikiContent_helpImage" class="CCS_HelpImage LibC_help" alt="What is Community Content?" title="What is Community Content?"></a>
+  					</div>
+					</td>
+				</tr>
+			</tbody></table>
+			<table class="CCS_Toolbar" border="0" cellpadding="0" cellspacing="0" width="100%">
+				<tbody><tr>
+					<td class="CCS_Add">
+					  <a id="ctl00_rs1_WikiContent_Add" class="CCS_Link" href='javascript:WebForm_DoPostBackWithOptions(new%20WebForm_PostBackOptions("ctl00$rs1$WikiContent$Add",%20"",%20false,%20"",%20"http://msdn.microsoft.com/en-us/library/Community-Signup.aspx?ru=http%3a%2f%2fmsdn.microsoft.com%2fen-us%2flibrary%2fbb203879(XNAGameStudio.30).aspx%3fwbi%3dnew",%20false,%20true))'>Add new content</a>
+					</td>
+					<td class="CCS_RecentChanges">
+					  <a href="http://msdn.microsoft.com/en-us/library/community-edits.rss?topic=bb203879%7Cen-us%7C30" id="ctl00_rs1_WikiContent_recentPageLink"><img id="ctl00_rs1_WikiContent_imageRSS" class="CCS_RSSImage LibC_rss_button" src="xact_files/clear.gif" alt="RSS" style="border-width: 0px;" align="middle"></a>&nbsp;
+					  <span id="ctl00_rs1_WikiContent_recentChangesTitle" class="CCS_RecentChangesText">Annotations</span>
+					</td>
+					<td class="CCS_Profile" align="right">
+						
+					</td>
+				</tr>
+			</tbody></table>
+    
+				</div>
+
+    <div id="ctl00_rs1_WikiContent_wikiItems" class="CCS_ItemsContainer">
+					<div id="ctl00_rs1_WikiContent_ctl00_ItemUpdatePanel">
+						
+    <div id="ctl00_rs1_WikiContent_ctl00_Container" class="CCI_Container" style="display: none;">
+							
+      <div id="ctl00_rs1_WikiContent_ctl00_Header" class="CCI_Header">
+								
+        <table cellpadding="0" cellspacing="0" width="100%">
+            <tbody><tr>
+                <td align="left">
+                    <span id="ctl00_rs1_WikiContent_ctl00_HeaderTitle" class="CCI_Header_Title"></span>
+                </td>
+                <td>
+                    <span id="ctl00_rs1_WikiContent_ctl00_Label2" class="CCI_Header_Spacer">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                </td>
+
+                
+                  <td class="CCI_Header_Actions" align="right">
+                      <span id="ctl00_rs1_WikiContent_ctl00_EditInfo"></span><span id="ctl00_rs1_WikiContent_ctl00_Separator">
+                        &nbsp;&nbsp;|&nbsp;&nbsp;
+                      </span><span id="ctl00_rs1_WikiContent_ctl00_EditLabel"><a id="ctl00_rs1_WikiContent_ctl00_Edit" title="Edit this version" class="CCI_Header_Link" href="javascript:__doPostBack('ctl00$rs1$WikiContent$ctl00$Edit','')">Edit</a></span>
+                  </td>
+                
+                
+            </tr>
+        </tbody></table>
+      
+							</div>
+
+      
+
+      <div id="ctl00_rs1_WikiContent_ctl00_EditorPanel" class="CCI_Text" style="cursor: default;">
+								
+        <div id="ctl00_rs1_WikiContent_ctl00_Editor_Container" onkeypress="javascript:return WebForm_FireDefaultButton(event, 'ctl00_rs1_WikiContent_ctl00_Editor_Save')">
+									
+	  
+    <div id="ctl00_rs1_WikiContent_ctl00_Editor_RadEditor" title="Double-click to edit this block" class="CCE_Editor_Disabled" style="height: auto; width: auto;">
+										<!-- 2008.2.723.35 -->
+									</div>
+    <input name="ctl00$rs1$WikiContent$ctl00$Editor$editorData" id="ctl00_rs1_WikiContent_ctl00_Editor_editorData" type="hidden">
+    <input name="ctl00$rs1$WikiContent$ctl00$Editor$tagEditorData" id="ctl00_rs1_WikiContent_ctl00_Editor_tagEditorData" type="hidden">
+    
+    
+  
+								</div>
+
+      
+							</div>
+
+      <div id="ctl00_rs1_WikiContent_ctl00_TagEditor_panel" class="CCT_Panel">
+  <div id="tagsPanel" class="CCT_TagsPanel">
+    <span id="ctl00_rs1_WikiContent_ctl00_TagEditor_title" class="CCT_Title">Tags</span>
+    <a href="http://msdn.microsoft.com/platform/Controls/CCTagEditor/resources/taghelp.htm" id="ctl00_rs1_WikiContent_ctl00_TagEditor_helpLink" class="CCT_HelpLink" onclick='CCS_ShowHelp("/platform/Controls/CCTagEditor/resources/taghelp.htm",800,600);return false;'>
+      <img src="xact_files/clear.gif" id="ctl00_rs1_WikiContent_ctl00_TagEditor_helpImage" class="CCT_HelpImage LibC_help" alt="What's this?" title="What's this?"></a>:
+    <span id="ctl00_rs1_WikiContent_ctl00_TagEditor_tags" class="CCT_Text"></span>
+    <span id="ctl00_rs1_WikiContent_ctl00_TagEditor_view" class="CCT_View">
+      <a href="http://msdn.microsoft.com/Platform/Controls/CCTagEditor/#" id="ctl00_rs1_WikiContent_ctl00_TagEditor_addTagLink" class="CCT_LinkButton" title="Add a tag to this topic">Add a tag</a>
+    </span>
+
+    <span id="ctl00_rs1_WikiContent_ctl00_TagEditor_editPanel" style="display: none;" class="CCT_Edit">
+      <input name="ctl00$rs1$WikiContent$ctl00$TagEditor$textbox" id="ctl00_rs1_WikiContent_ctl00_TagEditor_textbox" class="CCT_TextBox" autocomplete="off" type="text">
+      <a href="http://msdn.microsoft.com/Platform/Controls/CCTagEditor/#" id="ctl00_rs1_WikiContent_ctl00_TagEditor_addLink" class="CCT_LinkButton" title="Submit the tags for this topic">Add</a>
+
+      &nbsp;
+      <a href="http://msdn.microsoft.com/Platform/Controls/CCTagEditor/#" id="ctl00_rs1_WikiContent_ctl00_TagEditor_cancelLink" class="CCT_LinkButton" title="Cancel this operation">Cancel</a>
+    </span>
+    <span id="ctl00_rs1_WikiContent_ctl00_TagEditor_messagePanel" class="CCT_Message"></span>
+  </div>
+  <div id="ctl00_rs1_WikiContent_ctl00_TagEditor_flagAsPanel" class="CCT_FlagAsPanel" style="display: none;">
+    <span id="ctl00_rs1_WikiContent_ctl00_TagEditor_flagAsLabel">Flag as </span>
+    <a href="http://msdn.microsoft.com/Platform/Controls/CCTagEditor/#" id="ctl00_rs1_WikiContent_ctl00_TagEditor_contentBugLink" class="CCT_LinkButton" onclick='return CCT_FlagContentBug("http://msdn.microsoft.com/en-us/library/Community-Signup.aspx?ru=http%3a%2f%2fmsdn.microsoft.com%2fen-us%2flibrary%2fbb203879(XNAGameStudio.30).aspx",-1);' title="Flagging this annotation as a 'ContentBug' will let the author know that this topic needs to be reviewed">ContentBug</a>
+  </div>
+  <div style="clear: both;"></div>
+</div>
+
+
+    
+						</div>
+  
+					</div>
+
+				</div>
+
+    <div id="ctl00_rs1_WikiContent_EditorPanel" class="CCI_Container_Edit" style="display: none;">
+					
+      <div id="ctl00_rs1_WikiContent_Editor_Container" onkeypress="javascript:return WebForm_FireDefaultButton(event, 'ctl00_rs1_WikiContent_Editor_Save')">
+						
+	  
+    <div id="ctl00_rs1_WikiContent_Editor_RadEditor" title="Double-click to edit this block" class="CCE_Editor_Disabled" style="height: auto; width: auto;">
+							
+						</div>
+    <input name="ctl00$rs1$WikiContent$Editor$editorData" id="ctl00_rs1_WikiContent_Editor_editorData" type="hidden">
+    <input name="ctl00$rs1$WikiContent$Editor$tagEditorData" id="ctl00_rs1_WikiContent_Editor_tagEditorData" type="hidden">
+    
+    
+  
+					</div>
+
+    
+				</div>
+    
+
+    <div id="ProgressIndicator" class="CCS_Progress">
+      <img src="xact_files/clear.gif" id="ctl00_rs1_WikiContent_progressImage" class="LibC_spinner" alt="Processing">
+    </div>
+
+    <div class="CCS_Footer">
+   
+			</div>
+
+		</div>
+      
+
+<div style="overflow: hidden; display: block; position: relative;">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+  <tbody><tr>
+    <td id="ctl00_rs1_mtpsFooter_FooterFadeCell" class="MTPS_FooterFade">
+      <div id="ctl00_rs1_mtpsFooter_SiteLinks" class="MTPS_FooterLinks">
+
+		</div>
+      <span id="ctl00_rs1_mtpsFooter_MSFT_copyright" title="© 2008  Microsoft Corporation. All rights reserved." class="MTPS_FooterCopyright">© 2008  Microsoft Corporation. All rights reserved.</span>
+      <a id="ctl00_rs1_mtpsFooter_MSFT_Terms" title="Terms of Use" class="MTPS_FooterLinks" href="http://msdn.microsoft.com/cc300389.aspx">Terms of Use</a>
+      &nbsp;|&nbsp;
+      <a id="ctl00_rs1_mtpsFooter_MSFT_Trademarks" title="Trademarks" class="MTPS_FooterLinks" href="http://www.microsoft.com/library/toolbar/3.0/trademarks/en-us.mspx">Trademarks</a>
+      &nbsp;|&nbsp;
+      <a id="ctl00_rs1_mtpsFooter_MSFT_PrivacyStatement" title="Privacy Statement" class="MTPS_FooterLinks" href="http://www.microsoft.com/info/privacy.mspx">Privacy Statement</a>
+    </td>
+		
+    <td id="ctl00_rs1_mtpsFooter_FooterLogoCell">
+      <a id="ctl00_rs1_mtpsFooter_MSFT_LOGO" title="Microsoft Corporation" href="http://www.microsoft.com/"><img id="ctl00_rs1_mtpsFooter_MSFT_imgLogo" class="msdn_TabC_mslogo" src="xact_files/clear.gif" style="border-width: 0px;"></a>
+    </td>
+		
+  </tr>
+</tbody></table>
+
+</div>
+ 
+      
+	</div>
+</div>
+  </div>
+  <div style="display: none;"><img src="xact_files/trans_pixel.gif" alt="Page view tracker" border="0" vspace="0" width="0" height="0" hspace="0"></div>
+  
+<script src="xact_files/webtrendsscript-bn2036.js" type="text/javascript"></script>
+<noscript>
+<div><img alt="DCSIMG" id="Img1" width="1" height="1"
+src="http://m.webtrends.com/dcsmgru7m99k7mqmgrhudo0k8_8c6m/njs.gif?dcsuri=/nojavascript&amp;WT.js=No"
+/></div>
+</noscript><script type="text/javascript" src="xact_files/mtps-bn2036.js"></script>
+  
+<script type="text/javascript">
+//<![CDATA[
+var CollapsiblePanels =  new Array({id:'ctl00_rs1_mainContentContainer_cpe351034'});
+var CCT_Controls =  new Array({id:-1,prefix:'ctl00_rs1_WikiContent_TopicTagEditor_'}, {id:-2,prefix:'ctl00_rs1_WikiContent_ctl00_TagEditor_'});
+var CCE_EditorInfo =  new Array({i:-2,p:'ctl00_rs1_WikiContent_ctl00_Editor_',c:'ctl00_rs1_WikiContent_ctl00_'}, {i:-1,p:'ctl00_rs1_WikiContent_Editor_',c:''});
+//]]>
+</script>
+
+
+<script type="text/javascript">
+//<![CDATA[
+window.setTimeout(function(){EC_Init("ctl00_rs1_ExpandCollapse","Expand All","Collapse All","LibC_c","LibC_o");},0);Sys.WebForms.PageRequestManager.getInstance().add_beginRequest(CCS_BeginRequestHandler);Sys.WebForms.PageRequestManager.getInstance().add_endRequest(CCS_EndRequestHandler);
+WebForm_InitCallback(); RegisterAutoSubmit('ctl00_ib1_Flyout_Rating1','ctl00_ib1_Flyout_btnSubmit','contentRatingbb203879XNAGameStudio.30en-us');
+
+//]]>
+</script>
+<script type="text/javascript" language="javascript">
+<!--
+ function GetContentWnd(){ return parent; } function OnInitPage(){var oWnd = GetContentWnd();} function GetServerData(arg, context){} function OnSave(){ var oWnd = GetContentWnd(); window.external.addFavorite('http://msdn.microsoft.com/en-us/library/bb203879.aspx', oWnd.document.title ); }
+
+-->
+</script>
+<script type="text/javascript">
+//<![CDATA[
+document.getElementById('ctl00_ib1_Flyout_rtgContainer').title="Click a star and provide feedback";
+
+ document.onkeypress = function(e){ ra_keyPress(e, "ctl00_rs1_raSplitter","ctl00_rs1_raLeft");};
+CCT_Init("false","http%3a%2f%2fmsdn.microsoft.com%2fen-us%2flibrary%2fbb203879.aspx");$addHandler($get("ctl00_rs1_WikiContent_TopicTagEditor_editPanel"),"keydown",CCT_KeyDown);Sys.Application.initialize();
+TFly_Init('ctl00$Masthead1$LocaleManagement$ctl00',0,0,1,4,60,'LocaleManagementFlyoutStaticHover','',100,400,'','','','');
+TFly_Init('ctl00$Masthead1$QuickLinks$ctrlFlyout',0,0,1,4,60,'QuickLinksFlyoutStaticHover_msdn','',100,400,'','','','');
+TFly_Init('ctl00$ib1$Flyout',5,2,1,4,60,'','',100,400,'','','','');
+Sys.Application.add_init(function() {
+    $create(Microsoft.Mtps.Web.UI.MtpsRatingBehavior, {"AutoPostBack":false,"CallbackID":"ctl00$ib1$Flyout$Rating1","ClientStateFieldID":"ctl00_ib1_Flyout_Rating1_RatingExtender_ClientState","EmptyStarCssClass":"emptyRatingStar","FilledStarCssClass":"filledRatingStar","StarCssClass":"ratingStar","Tag":"contentRatingbb203879XNAGameStudio.30en-us","WaitingStarCssClass":"savedRatingStar","id":"ctl00_ib1_Flyout_Rating1_RatingExtender"}, null, null, $get("ctl00_ib1_Flyout_Rating1"));
+});
+var tocVectorObject;var hostbase;var closedImg;var openImg;var emptyImg;var loadingImg;var tocVector;var tocIndex = 0;var holder;var tocLoaded = false;var tocCollapsed = 'False';tocVectorObject = {"nodes": [{"id": "ms310241" ,"url": "/ms310241(n)"},{"id": "aa187916" ,"url": "/aa187916(n)"},{"id": "aa187935" ,"url": "/aa187935(n)"},{"id": "dd253701" ,"url": "/dd253701(n)"},{"id": "dd253708" ,"url": "/dd253708(n)"},{"id": "dd282523" ,"url": "/dd282523(n)"},{"id": "bb203879" ,"url": "/bb203879(n)"}]};hostbase ="http://msdn.microsoft.com/en-us/library";tocVector = eval(tocVectorObject);closedImg = "LibC_c";openImg = "LibC_o";emptyImg = "LibC_e";Sys.Application.add_load(LoadToc);TFly_Init('ctl00$rs1$eb1$ctl00',0,-1,-1,10,5,'statHover','',0,0,'EyeBrowMenuBarSetHeight','ExpEye','','');
+TFly_Init('ctl00$rs1$eb1$ctl01',0,-1,-1,10,5,'statHover','',0,0,'EyeBrowMenuBarSetHeight','ExpEye','','');
+TFly_Init('ctl00$rs1$eb1$ctl02',0,-1,-1,10,5,'statHover','',0,0,'EyeBrowMenuBarSetHeight','ExpEye','','');
+TFly_Init('ctl00$rs1$eb1$ctl03',0,-1,-1,10,5,'statHover','',0,0,'EyeBrowMenuBarSetHeight','ExpEye','','');
+TFly_Init('ctl00$rs1$eb1$ctl04',0,-1,-1,10,5,'statHover','',0,0,'EyeBrowMenuBarSetHeight','ExpEye','','');
+TFly_Init('ctl00$rs1$eb1$ctl05',0,-1,-1,10,5,'statHover','',0,0,'EyeBrowMenuBarSetHeight','ExpEye','','');
+TFly_Init('ctl00$rs1$eb1$ctl06',0,-1,-1,10,5,'statHover','',0,0,'EyeBrowMenuBarSetHeight','ExpEye','','');
+Sys.Application.add_init(function() {
+    $create(Microsoft.Mtps.Web.UI.CollapsiblePanelBehavior, {"AutoCollapse":false,"AutoExpand":false,"CollapseControlID":"ctl00_rs1_mainContentContainer_cpe351034_h","Collapsed":false,"CollapsedCss":"LibC_c","CollapsedSize":0,"CollapsedText":"","ExpandControlID":"ctl00_rs1_mainContentContainer_cpe351034_h","ExpandedCss":"LibC_o","ExpandedSize":0,"ExpandedText":"","ImageControlID":"ctl00_rs1_mainContentContainer_cpe351034_i","ScrollContents":false,"SuppressPostBack":false,"TextLabelID":"","id":"ctl00_rs1_mainContentContainer_cpe351034_x"}, null, null, $get("ctl00_rs1_mainContentContainer_cpe351034_c"));
+});
+//]]>
+</script>
+
+<script language="javascript" type="text/javascript" src="xact_files/broker.js"></script><script language="JavaScript" src="xact_files/SiteRecruit_PageConfiguration_MSDN-p15808382-p26386365_TIER1.js"></script>
+</div></form></body></html>

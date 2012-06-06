@@ -1,0 +1,49 @@
+General
+Project	Build Platform	Timestamp	Content Version
+F:\computerProjects\FINAL_XNA_GAME_ENGINE\prjXNAGame\prjXNAGame\Content\audio\sounds.xap	Windows	Sat Dec 06 21:18:35 2008	43
+
+Referenced Variables (0)
+Name	Type	Min Value	Max Value	Default Value
+
+Referenced Categories (2)
+Name	Parent	Instance Limit	Instance Limit Behavior
+Global	<none>	<none>	<none>
+Default	Global	<none>	<none>
+
+Valid Cues (1)
+Sound Bank	Name	Interactive	Looping	Instance Limit	Instance Limit Behavior	Dependant Wave Banks	Cue Instance Variables	Global Variables	Notes
+Sound Bank	ring	Non-Interactive	Non-Looping	<none>	<none>	Wave Bank	<none>	<none>	<none>
+
+Referenced Wave Banks (1)
+Name	Type	Wave Names	Num Waves	Dependant Sound Banks
+Wave Bank	In-Memory	Omitted	1	Sound Bank
+
+Sound Banks (1)
+Name	Cue Names	Dependant Wave Banks
+Sound Bank	Included	Wave Bank
+
+Unreferenced Waves (0)
+
+Unreferenced Sounds (0)
+
+Unreferenced Wave Banks (0)
+
+Unreferenced Variables (4)
+Name
+OrientationAngle
+DopplerPitchScalar
+SpeedOfSound
+Distance
+
+Unreferenced Categories (1)
+Name
+Music
+
+Unreferenced RPC Presets (0)
+
+Unreferenced DSP Presets (0)
+
+Invalid Cues (0)
+
+Invalid Sounds (0)
+

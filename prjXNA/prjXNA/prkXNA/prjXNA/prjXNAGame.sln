@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual C# Express 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "prjXNAGame", "prjXNAGame\prjXNAGame.csproj", "{927DEE3E-F491-4E1A-A513-BC2D6298E7F6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "kXNAlib", "kXNAlib\kXNAlib.csproj", "{FABC11D9-1274-42C0-ACB0-A13ECD5611D8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{927DEE3E-F491-4E1A-A513-BC2D6298E7F6}.Debug|x86.ActiveCfg = Debug|x86
+		{927DEE3E-F491-4E1A-A513-BC2D6298E7F6}.Debug|x86.Build.0 = Debug|x86
+		{927DEE3E-F491-4E1A-A513-BC2D6298E7F6}.Release|x86.ActiveCfg = Release|x86
+		{927DEE3E-F491-4E1A-A513-BC2D6298E7F6}.Release|x86.Build.0 = Release|x86
+		{5A134208-F8F2-4D6F-AB30-FFABEDFDB3F9}.Debug|x86.ActiveCfg = Debug|x86
+		{5A134208-F8F2-4D6F-AB30-FFABEDFDB3F9}.Release|x86.ActiveCfg = Release|x86
+		{FABC11D9-1274-42C0-ACB0-A13ECD5611D8}.Debug|x86.ActiveCfg = Debug|x86
+		{FABC11D9-1274-42C0-ACB0-A13ECD5611D8}.Debug|x86.Build.0 = Debug|x86
+		{FABC11D9-1274-42C0-ACB0-A13ECD5611D8}.Release|x86.ActiveCfg = Release|x86
+		{FABC11D9-1274-42C0-ACB0-A13ECD5611D8}.Release|x86.Build.0 = Release|x86
+		{A55FEED5-2EB1-476A-9290-23EE11942CB3}.Debug|x86.ActiveCfg = Debug|x86
+		{A55FEED5-2EB1-476A-9290-23EE11942CB3}.Release|x86.ActiveCfg = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

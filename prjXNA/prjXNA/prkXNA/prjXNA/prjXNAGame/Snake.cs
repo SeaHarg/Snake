@@ -27,7 +27,7 @@ namespace prjXNAGame
         public void UserLogic()
         {
             if (this.isKeyPressed(Microsoft.Xna.Framework.Input.Keys.Up))
-                BodySprite.setVelocity(0, -10);
+                BodySprite.setVelocity(0,-10);
             else if (this.isKeyPressed(Microsoft.Xna.Framework.Input.Keys.Down))
                 BodySprite.setVelocity(0, 10);
             else if (this.isKeyPressed(Microsoft.Xna.Framework.Input.Keys.Left))

@@ -11,16 +11,18 @@ namespace prjXNAGame
         List<sprite> Body = new List<sprite>();
         sprite BodySprite;
         sprite Fruit;
-        Random Fruity;
+        Random r;
         
         int WhatFruit = 0;
         int Score = 0;
+        int speedx = 20;
 
         public void FruitsIni()
         {
-            Fruity = new Random(); 
-            WhatFruit = Fruity.Next(1,50);
+            r = new Random(); 
+            WhatFruit = r.Next(1,50);
             Fruit = new sprite(this, "Pineapple", 15, 15, 150, 150);
+            Fruit.enableCollision(false);
         }
 
         public void EdgesIni ()
@@ -38,18 +40,18 @@ namespace prjXNAGame
         public void UserIni()
         {
             BodySprite = new sprite(this, "body", 10, 10, 200, 200);
-            BodySprite.setVelocity(0, -10);
+            BodySprite.setVelocity(0, -20);
         }
         public void UserLogic()
         {
             if (this.isKeyPressed(Microsoft.Xna.Framework.Input.Keys.Up))
-                BodySprite.setVelocity(0,-20);
+                BodySprite.setVelocity(0,-speedx);
             else if (this.isKeyPressed(Microsoft.Xna.Framework.Input.Keys.Down))
-                BodySprite.setVelocity(0, 20);
+                BodySprite.setVelocity(0, speedx);
             else if (this.isKeyPressed(Microsoft.Xna.Framework.Input.Keys.Left))
-                BodySprite.setVelocity(-20, 0);
+                BodySprite.setVelocity(-speedx, 0);
             else if (this.isKeyPressed(Microsoft.Xna.Framework.Input.Keys.Right))
-                BodySprite.setVelocity(20, 0);
+                BodySprite.setVelocity(speedx, 0);
 
             if (BodySprite.pixelCollidesWith(Border[0]))
                 BodySprite.setVelocity(0, 0);
@@ -63,7 +65,8 @@ namespace prjXNAGame
             if (BodySprite.pixelCollidesWith(Fruit))
             {
                 Score++;
-                Fruit.setPosition
+                Fruit.setPosition(r.Next(10, 380), r.Next(10, 380));
+                speedx = Convert.ToInt16(speedx + speedx * 0.25);
             }
 
         }

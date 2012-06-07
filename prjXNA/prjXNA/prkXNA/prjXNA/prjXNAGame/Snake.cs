@@ -10,6 +10,18 @@ namespace prjXNAGame
         sprite[] Border = new sprite[4];
         List<sprite> Body = new List<sprite>();
         sprite BodySprite;
+        sprite Fruit;
+        Random Fruity;
+        
+        int WhatFruit = 0;
+        int Score = 0;
+
+        public void FruitsIni()
+        {
+            Fruity = new Random(); 
+            WhatFruit = Fruity.Next(1,50);
+            Fruit = new sprite(this, "Pineapple", 15, 15, 150, 150);
+        }
 
         public void EdgesIni ()
         {
@@ -38,23 +50,21 @@ namespace prjXNAGame
                 BodySprite.setVelocity(-20, 0);
             else if (this.isKeyPressed(Microsoft.Xna.Framework.Input.Keys.Right))
                 BodySprite.setVelocity(20, 0);
+
             if (BodySprite.pixelCollidesWith(Border[0]))
-            {
                 BodySprite.setVelocity(0, 0);
-            }
             if (BodySprite.pixelCollidesWith(Border[1]))
-            {
                 BodySprite.setVelocity(0, 0);
-            }
             if (BodySprite.pixelCollidesWith(Border[2]))
-            {
                 BodySprite.setVelocity(0, 0);
-            }
             if (BodySprite.pixelCollidesWith(Border[3]))
-            {
                 BodySprite.setVelocity(0, 0);
+
+            if (BodySprite.pixelCollidesWith(Fruit))
+            {
+                Score++;
+                Fruit.setPosition
             }
-                
 
         }
 
@@ -63,7 +73,8 @@ namespace prjXNAGame
             base.gameIni();
             this.setScreenSize(400, 400);
             this.setScreenColour(Microsoft.Xna.Framework.Graphics.Color.Green);
-            
+
+            FruitsIni();
             EdgesIni();
             UserIni();
         }
@@ -81,7 +92,7 @@ namespace prjXNAGame
                 Border[c].draw();
             }
             BodySprite.draw();
-            
+            Fruit.draw();
         }
     }
 }

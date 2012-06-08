@@ -2,20 +2,36 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.IO;
 
 namespace prjXNAGame
 {
     class Snake:theGame
     {
+        #region Varibles 
+        //*************************************************Arrays*************************************************
         sprite[] Border = new sprite[4];
-        List<sprite> Body = new List<sprite>();
+        //*************************************************Sprites*************************************************
         sprite BodySprite;
         sprite Fruit;
+        //*************************************************Text*************************************************
+        text PointsDisplay;
+        text WordScore;
+        //*************************************************Objects*************************************************
         Random r;
-        
+        //*************************************************Integers*************************************************
         int WhatFruit = 0;
         int Score = 0;
-        int speedx = 20;
+        int speedx = 100;
+        
+        bool homeScreen, highScreen, gamePLayScreen,Gameover;
+        #endregion
+
+        public void TextIni()
+        {
+            WordScore = new text(this, "pongText", "Score:");
+            PointsDisplay = new text(this, "pongText", Convert.ToString(Score));
+        }
 
         public void FruitsIni()
         {
@@ -25,17 +41,24 @@ namespace prjXNAGame
             Fruit.enableCollision(false);
         }
 
-        public void EdgesIni ()
+        public void EdgesIni()
         {
             Border[0] = new sprite(this, "Side", 10, 800, 0, 0);
             Border[1] = new sprite(this, "Side", 800, 10, 0, 0);
             Border[2] = new sprite(this, "Side", 10, 800, 400, 0);
-            Border[3] = new sprite(this, "side", 800, 50, 0, 400);
+            Border[3] = new sprite(this, "side", 800, 60, 0, 400);
             Border[0].enableCollision(false);
             Border[1].enableCollision(false);
             Border[2].enableCollision(false);
             Border[3].enableCollision(false);
 
+        }
+        public void EdgesRender()
+        {
+            for (int c = 0; c < Border.Length; c++)
+            {
+                Border[c].draw();
+            }
         }
         public void UserIni()
         {
@@ -53,20 +76,33 @@ namespace prjXNAGame
             else if (this.isKeyPressed(Microsoft.Xna.Framework.Input.Keys.Right))
                 BodySprite.setVelocity(speedx, 0);
 
-            if (BodySprite.pixelCollidesWith(Border[0]))
-                BodySprite.setVelocity(0, 0);
-            if (BodySprite.pixelCollidesWith(Border[1]))
-                BodySprite.setVelocity(0, 0);
-            if (BodySprite.pixelCollidesWith(Border[2]))
-                BodySprite.setVelocity(0, 0);
-            if (BodySprite.pixelCollidesWith(Border[3]))
-                BodySprite.setVelocity(0, 0);
+            if (BodySprite.getX() < 10)
+            {
+                gamePLayScreen = false;
+                Gameover = true;
+            }
+            if (BodySprite.getX() > 390)
+            {
+                gamePLayScreen = false;
+                Gameover = true;
+            }
+            if (BodySprite.getY() < 10)
+            {
+                gamePLayScreen = false;
+                Gameover = true;
+            }
+            if (BodySprite.getY() > 385-20)
+            {
+                gamePLayScreen = false;
+                Gameover = true;
+            }
 
             if (BodySprite.pixelCollidesWith(Fruit))
             {
-                Score++;
-                Fruit.setPosition(r.Next(10, 380), r.Next(10, 380));
-                speedx = Convert.ToInt16(speedx + speedx * 0.25);
+                Score = Score + 10;
+                TextIni();
+                Fruit.setPosition(r.Next(10 + 8, 390 - 8), r.Next(10 + 8, 350 - 8));
+                speedx = speedx+10;
             }
 
         }
@@ -75,27 +111,57 @@ namespace prjXNAGame
         {
             base.gameIni();
             this.setScreenSize(400, 400);
-            this.setScreenColour(Microsoft.Xna.Framework.Graphics.Color.Green);
+            this.setScreenColour(Microsoft.Xna.Framework.Graphics.Color.Purple);
 
             FruitsIni();
             EdgesIni();
             UserIni();
+            TextIni();
+
+            gamePLayScreen = true;
+            //homeScreen = true;
         }
         public override void gameLogic()
         {
             base.gameLogic();
-            UserLogic();
+            if (homeScreen)
+            {
+
+
+            }
+            else if (gamePLayScreen)
+            {
+                UserLogic();
+            }
+
+
+
+            
         }
         public override void gameRender()
         {
             base.gameRender();
-        
-            for (int c = 0; c < Border.Length; c++)
+
+            if (homeScreen)
             {
-                Border[c].draw();
+                EdgesRender();
             }
-            BodySprite.draw();
-            Fruit.draw();
+            else if (gamePLayScreen)
+            {
+                EdgesRender();
+                BodySprite.draw();
+                Fruit.draw();
+                PointsDisplay.draw(130, 367, Microsoft.Xna.Framework.Graphics.Color.Blue);
+                WordScore.draw(30, 367, Microsoft.Xna.Framework.Graphics.Color.Blue);
+            }
+            else if (Gameover)
+            {
+                EdgesRender();
+            }
+
+
+           
+           
         }
     }
 }
